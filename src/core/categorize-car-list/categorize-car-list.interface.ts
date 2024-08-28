@@ -5,7 +5,7 @@ export interface CategorizeCarListResponse {
   cheapCar: CarModel;
   oldestCar: CarModel;
   newestCar: CarModel;
-  colorCount: Record<string, number>;
+  colorCount: {[brand: string]: number};
   categorizedBrandCount: {[brand: string]: number};
   totalCarCount: number;
   carListSortedByPrice: CarModel[];
